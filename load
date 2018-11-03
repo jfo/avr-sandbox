@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sudo teensy-loader-cli --mcu=TEENSY2 build/$1.hex  -w -v
