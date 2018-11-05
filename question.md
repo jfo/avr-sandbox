@@ -53,7 +53,7 @@ loop:
 jmp loop
 ```
 
-_But_, when I disassembe both of them, I find something unexpected.
+_But_, when I disassemble both of them, I find something unexpected.
 
 ```
  avr-objdump --prefix-addresses -m avr5 -D build/thing.hex -s
