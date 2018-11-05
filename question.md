@@ -1,5 +1,6 @@
 I'm experimenting with avr assembly and a teensy 2, which has an atmega32u4 chip in it
-My make command
+
+My make command:
 
 ```
 default: build
@@ -7,7 +8,11 @@ default: build
 	objcopy -O ihex build/thing.o build/thing.hex
 ```
 
-Then I load it
+(the makefile in the repo has local lib paths hardcoded in it right now, this
+is just a scratchpad repo.)
+
+
+Then I load it:
 
 ```
 sudo teensy-loader-cli --mcu=TEENSY2 build/$1.hex -w -v
@@ -91,4 +96,5 @@ case, but this behavior baffles me.
 This is the simplest example I could come up with. Am I using these
 instructions incorrectly? It doesn't change if I add a `nop` after loop. Is the
 assembler "optimizing" this or something? I just want to understand why I'm not
-seeing the addresses I expect being passed to `jmp` and `rjmp`
+seeing the addresses I expect being passed to `jmp` and `rjmp`. I'm going by
+the syntax I'm seeing on http://avrbeginners.net/
