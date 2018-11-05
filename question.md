@@ -98,3 +98,14 @@ instructions incorrectly? It doesn't change if I add a `nop` after loop. Is the
 assembler "optimizing" this or something? I just want to understand why I'm not
 seeing the addresses I expect being passed to `jmp` and `rjmp`. I'm going by
 the syntax I'm seeing on http://avrbeginners.net/
+
+compiler version:
+
+```
+GNU assembler (GNU Binutils) 2.31.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or later.
+This program has absolutely no warranty.
+This assembler was configured for a target of `avr'.
+```
